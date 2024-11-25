@@ -1,0 +1,53 @@
+body{
+    background-color: hsl(212, 45%, 89%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    display: grid;
+    grid-template-columns: auto-fit;
+    grid-template-rows: 1fr;
+    max-width: 360px;
+    height: 475px;
+    background-color: white;border-radius: 10px;
+    margin: 20px;
+}
+
+.container .QR-code{
+    grid-area: QR-code;
+    margin: 20px 20px 0px 20px;
+}
+
+.container .QR-code img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.Informação-destaque{
+    grid-area: informação-destaque;
+    font-size: 27px;
+    margin: 15px 20px 0 20px;
+    text-align: center ;
+}
+
+.informação{
+    grid-area: informação;
+    margin: 10px 20px 40px 20px;
+    font-size: 20px;
+    text-align: center;
+    color: hsl(216, 15%, 48%);
+}
+
+.container{
+    grid-template-areas: 
+        "QR-code"
+        "QR-code"
+        "QR-code"
+        "informação-destaque"
+        "informação"
+    ;
+}
